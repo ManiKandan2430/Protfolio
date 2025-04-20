@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import BackgroundParticles from "../components/HeroModels/BackgroundParticles";
 
 const skills = [
   {
@@ -99,7 +100,7 @@ const SkillsSection = () => {
                     className="timeline"
                     ref={(el) => (timelinesRef.current[index] = el)}
                   />
-                  <div className="gradient-line lg:h-[60%] mt-[10px]" />
+                  <div className="gradient-line lg:h-[65%] h-[70%] mt-[10px]" />
                 </div>
                 <div className="flex relative z-20">
                   <div className="timeline-logo">

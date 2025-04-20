@@ -4,10 +4,14 @@ Command: npx gltfjsx@6.5.3 computer-optimized.glb -T
 Files: computer-optimized.glb [486.38KB] > C:\Users\LENOVO\Portfolio\public\models\computer-optimized-transformed.glb [39.72KB] (92%)
 */
 
-import React, { useEffect } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useEffect } from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Computer({ deskColor = "#697295", diskColor = "#ABB8B7", ...props }) {
+export function Computer({
+  deskColor = "#697295",
+  diskColor = "#ABB8B7",
+  ...props
+}) {
   const { nodes, materials } = useGLTF(
     "/models/computer-optimized-transformed.glb"
   );
@@ -37,5 +41,4 @@ export function Computer({ deskColor = "#697295", diskColor = "#ABB8B7", ...prop
   );
 }
 
-
-useGLTF.preload('/models/computer-optimized-transformed.glb')
+useGLTF.preload("/models/computer-optimized-transformed.glb");

@@ -90,9 +90,8 @@ const ShowcaseSection = () => {
   ];
 
   const renderCard = (project, i) => (
-    <StyledWrapper>
+    <StyledWrapper key={i}>
       <div
-        key={i}
         ref={(el) => (cardRefs.current[i] = el)}
         className="cards relative overflow-hidden text-white"
       >
